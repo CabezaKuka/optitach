@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>optiTACH · Tacómetro óptico con la cámara del celular</title>
+<meta name="description" content="Medí las RPM de cualquier eje o motor con la cámara de tu celular Android. Sin sensores ni cables. Probá la demo gratis.">
+<style>
+:root{--bg:#0B0E13;--panel:#151A22;--cell:#1F2630;--line:#262E3A;--acc:#FFB300;--on:#1A1300;--txt:#EDEFF3;--txt2:#8C95A3;--ok:#3DDC84}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 0;font-size:13px;color:var(--txt2);letter-spacing:.08em}
+header b{color:var(--txt);font-size:18px;letter-spacing:0}
+header span{color:var(--acc)}
+.hero{padding:44px 0 28px}
+h1{font-size:clamp(30px,7vw,46px);line-height:1.1;font-weight:700}
+h1 em{font-style:normal;color:var(--acc)}
+.sub{margin-top:14px;color:var(--txt2);font-size:17px;max-width:560px}
+.btn{display:inline-block;margin-top:24px;background:var(--acc);color:var(--on);font-weight:700;font-size:16px;padding:15px 26px;border-radius:14px;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.small{display:block;margin-top:10px;color:var(--txt2);font-size:13px}
+section{padding:26px 0;border-top:1px solid var(--line)}
+h2{font-size:12px;letter-spacing:.14em;color:var(--txt2);text-transform:uppercase;margin-bottom:14px}
+.cards{display:grid;gap:12px}
+@media(min-width:620px){.cards{grid-template-columns:1fr 1fr}}
+.card{background:var(--panel);border-radius:16px;padding:16px 18px}
+.card h3{font-size:16px;margin-bottom:4px}
+.card p{color:var(--txt2);font-size:14px}
+ol{list-style:none;counter-reset:p;display:grid;gap:12px}
+ol li{counter-increment:p;background:var(--panel);border-radius:16px;padding:14px 18px 14px 58px;position:relative;font-size:15px}
+ol li::before{content:counter(p);position:absolute;left:16px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--acc);color:var(--on);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+ol li small{display:block;color:var(--txt2);font-size:13px;margin-top:2px}
+.note{background:var(--panel);border-left:3px solid var(--acc);border-radius:10px;padding:12px 16px;color:var(--txt2);font-size:14px;margin-top:14px}
+.price{font-size:34px;font-weight:700}
+.price small{font-size:15px;color:var(--txt2);font-weight:400}
+.wa{display:inline-block;margin-top:16px;background:var(--ok);color:#06240f;font-weight:700;padding:13px 22px;border-radius:14px;text-decoration:none}
+details{background:var(--panel);border-radius:14px;padding:13px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;font-size:15px}
+details p{color:var(--txt2);font-size:14px;margin-top:8px}
+footer{padding:30px 0 40px;border-top:1px solid var(--line);color:var(--txt2);font-size:13px}
+footer a{color:var(--acc);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><b>opti<span>TACH</span></b> &nbsp;·&nbsp; GMSoftware</header>
+
+<div class="hero">
+<h1>Medí las RPM con la <em>cámara de tu celular</em></h1>
+<p class="sub">Apuntás la cámara a una marca en el eje o el disco, tocás MEDIR y listo. Sin sensores, sin cables, sin estroboscopio.</p>
+<a class="btn" href="https://github.com/CabezaKuka/optitach/releases/latest/download/optiTACH.apk">Descargar la demo gratis (APK)</a>
+<span class="small">Solo Android 8 o superior · la demo mide y muestra hasta 1000 RPM</span>
+</div>
+
+<section>
+<h2>Qué hace</h2>
+<div class="cards">
+<div class="card"><h3>Tacómetro óptico</h3><p>Usa la cámara en alta velocidad (240 o 120 fps) y calcula las RPM con análisis de frecuencia. Te avisa si la lectura está fuera del rango de tu cámara.</p></div>
+<div class="card"><h3>Estroboscopio</h3><p>Usa el LED del teléfono para "congelar" el movimiento y verificar velocidades.</p></div>
+<div class="card"><h3>Transmisión</h3><p>Calculadora de poleas y engranajes: velocidad de salida y relaciones.</p></div>
+<div class="card"><h3>Sin internet</h3><p>Funciona sin conexión. La medición se hace toda en el teléfono.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Cómo instalarla</h2>
+<ol>
+<li>Tocá el botón de descarga.<small>Si el navegador avisa que el archivo puede ser dañino, elegí "Descargar de todos modos". Es el aviso normal de Android para cualquier app que no viene de Play Store.</small></li>
+<li>Abrí el archivo descargado.<small>Android te pide permitir instalar apps desde esa fuente: aceptá solo para el navegador que usaste.</small></li>
+<li>Si aparece Play Protect, tocá "Instalar de todos modos".<small>No hace falta crear cuentas ni dar datos.</small></li>
+</ol>
+<p class="note">Necesita un teléfono con cámara de alta velocidad (240 o 120 fps a 720p). Si el tuyo no la tiene, la app te lo dice al abrirla.</p>
+</section>
+
+<section>
+<h2>Quitar el límite de 1000 RPM</h2>
+<p class="price">60 Bs <small>≈ 5 USD · pago único, para tu teléfono</small></p>
+<ol style="margin-top:16px">
+<li>En la app: Configuración → Licencia → Activar.<small>Ahí ves el código de tu teléfono.</small></li>
+<li>Tocá "Enviar código por WhatsApp".<small>Te respondemos con los datos de pago (QR o USDT).</small></li>
+<li>Cuando confirmamos el pago, te mandamos la clave.<small>La pegás en la app y se desbloquea sin límite.</small></li>
+</ol>
+<a class="wa" href="https://wa.me/59177626675?text=Hola%2C%20quiero%20activar%20optiTACH">Escribir por WhatsApp</a>
+</section>
+
+<section>
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Qué tan exacta es?</summary><p>En pruebas contra un tacómetro de taller y un generador de referencia, la diferencia estuvo alrededor de 1 % dentro del rango de la cámara. El límite depende de tu teléfono: la app te muestra hasta cuántas RPM mide con seguridad.</p></details>
+<details><summary>¿Hasta qué velocidad mide?</summary><p>Depende de la cámara. Con una marca por vuelta, un teléfono de 240 fps llega a unas 5700 RPM. Con más marcas por vuelta se baja el límite de RPM pero mejora la resolución.</p></details>
+<details><summary>¿La clave sirve para otro teléfono?</summary><p>No, es para el teléfono cuyo código nos mandaste. Si cambiás de teléfono, escribinos.</p></details>
+<details><summary>¿Es seguro instalar el APK?</summary><p>La app no pide más permiso que la cámara (y vibración para avisarte) y funciona sin internet. Descargala solo desde esta página.</p></details>
+</section>
+
+<footer>
+© GMSoftware · <a href="https://optimax.lat">optiMAX</a> · Santa Cruz de la Sierra, Bolivia
+</footer>
+</div>
+</body>
+</html>
